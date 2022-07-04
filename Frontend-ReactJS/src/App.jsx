@@ -4,11 +4,8 @@ import {
   Routes, 
   Route,
 } from "react-router-dom";
-import ErrorPage from './Home/pages/errorpage';
-import Home from "./Home/pages/home";
-import Locations from './Home/pages/locations';
-import MeetingsPage from "./Home/pages/meetings"
-import PrayerPage from "./Home/pages/prayerPage"
+import ErrorPage from './errorpage';
+import Home from "./home";
 
 import TreasuryDashboard from './treasury/TreasuryDashboard';
 // expense
@@ -24,7 +21,6 @@ import EditSundayOfferingComponent from "./treasury/sundayOfferingComponents/Edi
 import AddSpecialOfferingComponent from './treasury/specialOfferingComponents/AddSpecialOfferingComponent';
 import ViewSpecialOfferingComponent from "./treasury/specialOfferingComponents/ViewSpecialOfferingComponent"
 import EditSpecialOfferingComponent from "./treasury/specialOfferingComponents/EditSpecialOfferingComponent"
-import BeershebaPage from './Home/church_pages/BeershebaPage';
 
 
 export default function App() {
@@ -34,10 +30,7 @@ export default function App() {
     <Router>
         <Routes>
           <Route path="/" element={<Home />}></Route>
-          <Route path="/locations" element={<Locations />}></Route>
-          <Route path="/locations/beershebaChurch" element={<BeershebaPage />}></Route>
-          <Route path="/meetings" element={<MeetingsPage />}></Route> 
-          <Route path="/prayer" element={<PrayerPage />}></Route>
+          
           <Route path="/treasury" element={<TreasuryDashboard />}></Route>
           <Route path="/treasury/add-expenses/" element={<AddExpenseComponent />} ></Route>
           <Route path="/treasury/view-expenses" element={<ViewExpenseComponent />} ></Route>
