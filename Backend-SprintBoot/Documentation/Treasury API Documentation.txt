@@ -1,0 +1,139 @@
+Expenses : 
+
+http://localhost:8080/treasury/api/v1/add/addExpense    POST
+{
+	"expense_church" : "HOUSE_OF_BEATITUDES",
+	"expense_date" : "2022-07-07",
+	"billing_id" : "XXXXXX",
+	"expense_amount" : "1000",
+	"expense_remarks" : "wires"
+
+}
+
+http://localhost:8080/treasury/api/v1/edit/editExpense   PUT
+{
+    "expense_id" : 23,
+	"expense_church" : "HOUSE_OF_BEATITUDES",
+	"expense_date" : "2022-07-07",
+	"billing_id" : "XXXXXX",
+	"expense_amount" : "19000",
+	"expense_remarks" : "wires"
+
+}
+
+http://localhost:8080/treasury/api/v1/view/viewExpense?from_date=2022-07-01&to_date=2022-07-30&church_name=HOUSE_OF_BEATITUDES    GET
+Params : 
+{
+	"from_date" : "2022-07-01",
+	"to_date" : "2022-07-30",
+	"church_name" : "HOUSE_OF_BEATITUDES"
+}
+
+http://localhost:8080/treasury/api/v1/delete/deleteExpense?church_name=HOUSE_OF_BEATITUDES&id=18    DELETE
+Params : 
+{
+	"id" : 18,
+	"church_name" : "HOUSE_OF_BEATITUDES"
+}
+
+
+
+
+
+*****************************************************************************************************************************************************************
+*****************************************************************************************************************************************************************
+
+
+SUNDAY OFFERING
+
+http://localhost:8080/treasury/api/v1/add/addSundayOffering   POST 
+{
+    "sundayOffering_date" : "2022-07-07",
+    "sundayOffering_church" : "HOUSE_OF_BEATITUDES",
+    "sundayOffering_no2000" : "1",
+    "sundayOffering_no500" : "0",
+    "sundayOffering_no200" : "0",
+    "sundayOffering_no100" : "0",
+    "sundayOffering_no50" : "0",
+    "sundayOffering_no20" : "0",
+    "sundayOffering_no10" : "0",
+    "sundayOffering_coinsTotal" : "0",
+    "sundayOffering_Total" : "0",
+}
+
+
+http://localhost:8080/treasury/api/v1/edit/editSundayOffering    PUT
+{
+    "sundayOffering_id" : 2,
+    "sundayOffering_date" : "2022-07-07",
+    "sundayOffering_church" : "HOUSE_OF_BEATITUDES",
+    "sundayOffering_no2000" : "2",
+    "sundayOffering_no500" : "0",
+    "sundayOffering_no200" : "0",
+    "sundayOffering_no100" : "0",
+    "sundayOffering_no50" : "0",
+    "sundayOffering_no20" : "0",
+    "sundayOffering_no10" : "0",
+    "sundayOffering_coinsTotal" : "0",
+    "sundayOffering_Total" : "4000",
+}
+
+http://localhost:8080/treasury/api/v1/view/viewSundayOffering?from_date=2022-07-01&to_date=2022-08-01&church_name=HOUSE_OF_BEATITUDES	GET
+Params : 
+{
+	"from_date" : "2022-07-01",
+	"to_date" : "2022-07-30",
+	"church_name" : "HOUSE_OF_BEATITUDES"
+}
+
+http://localhost:8080/treasury/api/v1/delete/deleteSundayOffering?church_name=HOUSE_OF_BEATITUDES&id=2	DELETE
+Params : 
+{
+	"id" : 18,
+	"church_name" : "HOUSE_OF_BEATITUDES"
+}
+
+
+
+*****************************************************************************************************************************************************************
+*****************************************************************************************************************************************************************
+
+
+
+SPECIAL OFFERING
+
+
+http://localhost:8080/treasury/api/v1/add/addSpecialOffering	POST
+{
+    "specialOffering_church" : "HOUSE_OF_BEATITUDES",
+    "specialOffering_date" : "2022-07-07",
+    "specialOffering_amount" : "10000",
+    "specialOffering_from" : "Naruto"
+    
+}
+
+http://localhost:8080/treasury/api/v1/edit/editSpecialOffering	  PUT
+{
+    "specialOffering_id" : 1,
+    "specialOffering_church" : "HOUSE_OF_BEATITUDES",
+    "specialOffering_date" : "2022-07-07",
+    "specialOffering_amount" : "20000",
+    "specialOffering_from" : "Naruto"
+    
+}
+
+http://localhost:8080/treasury/api/v1/view/viewSpecialOffering?from_date=2022-07-01&to_date=2022-08-01&church_name=HOUSE_OF_BEATITUDES 	  GET
+Params : 
+{
+	"from_date" : "2022-07-01",
+	"to_date" : "2022-07-30",
+	"church_name" : "HOUSE_OF_BEATITUDES"
+}
+
+http://localhost:8080/treasury/api/v1/delete/deleteSpecialOffering?church_name=HOUSE_OF_BEATITUDES&id=1   DELETE
+Params : 
+{
+	"id" : 1,
+	"church_name" : "HOUSE_OF_BEATITUDES"
+}
+
