@@ -1,0 +1,55 @@
+.container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  justify-content: center;
+  padding: 15px;
+}
+.treasury-dashboard{
+    width: 400px;
+    border-radius: 10px;
+    overflow: hidden;
+    justify-content: center;
+  align-items: center;
+  justify-content: center;
+}
+.treasury-dashboard button{
+  display: block;
+}
+.expense-container{
+    width: 400px;
+    
+    border-radius: 10px;
+    overflow: hidden;
+    
+  }
+
+.splOffering-container{
+  width: 400px;
+    
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+  .sundayOffering-container{
+    
+    width: 100vh;
+    border-radius: 10px;
+  }
+  input[type=number]::-webkit-inner-spin-button, 
+  input[type=number]::-webkit-outer-spin-button { 
+    -webkit-appearance: none; 
+    margin: 0; 
+  }
+.main-container{
+    min-height: 100%;  /* Fallback for browsers do NOT support vh unit */
+    min-height: 100vh; /* These two lines are counted as one :-)       */
+  
+    display: flex;
+    align-items: center;
+  
+}
+.custom {
+  width: 230px !important;
+}
